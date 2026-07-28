@@ -17,6 +17,7 @@ paths:
         - catalog
       summary: Get catalog
       description: Get catalog
+      operationId: listProducts
       parameters:
         - name: tags
           in: query
@@ -71,6 +72,7 @@ paths:
         - catalog
       summary: Catalog search
       description: Catalog search
+      operationId: searchProducts
       parameters:
         - name: keyword
           in: query
@@ -120,6 +122,7 @@ paths:
         - catalog
       summary: Get catalog
       description: Get catalog
+      operationId: getProduct
       parameters:
         - name: id
           in: path
@@ -158,6 +161,7 @@ paths:
         - catalog
       summary: Get catalog size
       description: Get catalog size
+      operationId: listSizes
       parameters:
         - name: tags
           in: query
@@ -195,6 +199,7 @@ paths:
         - catalog
       summary: List tags
       description: get tags
+      operationId: listTags
       responses:
         "200":
           description: OK
